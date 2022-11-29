@@ -17,3 +17,6 @@ console.log(novaOperacao);
 const aluno = "AlunoBeto";
 
 console.log(aluno * numInt1);
+var a = 0
+var b = 0
+console.log(a/b) // NaN
