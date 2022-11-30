@@ -10,3 +10,8 @@ const tx2 = "Batata";
 
 console.log(tx1 === tx2);
 console.log(tx1.length === tx2.length);
+
+let usuarioConectado = false;
+console.log(Number(usuarioConectado)); //conversão da booleana para número, sendo que false (falso) retorna o número 0.
+usuarioConectado = true;
+console.log(Number(usuarioConectado)); // conversão de true (verdadeiro) para o número 1.
