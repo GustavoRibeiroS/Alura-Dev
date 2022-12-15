@@ -6,10 +6,15 @@ const listaMediaAlunos = [alunos, medias];
 function buscarAluno(aluno) {
     if (listaMediaAlunos[0].includes(aluno)) { //Verifica se inclue o nome do aluno passado no parâmetro
 
-        const indiceAluno =  listaMediaAlunos[0].indexOf(aluno) //indexOf retorna o índice (posição) do aluno na "listaMediaAlunos" dentro de "alunos"
-        console.log(indiceAluno);
+        // const alunos = listaDeAlunosEMedias[0];
+        // const medias = listaDeAlunosEMedias[1];
 
-        const mediaAluno = listaMediaAlunos[1][indiceAluno]
+        const[pAlunos, nMedias] = listaMediaAlunos;
+
+        const indiceAluno =  pAlunos.indexOf(aluno) //indexOf retorna o índice (posição) do aluno na "listaMediaAlunos" dentro de "alunos"
+        console.log(`Obs. Posição do aluno no array: ${indiceAluno}`);
+
+        const mediaAluno = nMedias[indiceAluno]
         console.log(`O aluno: ${aluno} está cadastrado, e sua média é: ${mediaAluno}`);
 
     } else {
@@ -17,4 +22,5 @@ function buscarAluno(aluno) {
     }
 
 }
+
 buscarAluno("Brendo") //Parâmetro
