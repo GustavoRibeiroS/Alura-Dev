@@ -4,4 +4,4 @@ const meuSet = new Set(nomes);
 
 const listaAtualizada = [...meuSet]
 
-console.log(listaAtualizada);
+console.log(listaAtualizada); 
