@@ -20,6 +20,5 @@ cliente.enderecos.push({
     apartamento: false
 })
 
-
 const listaApenasApartamentos = cliente.enderecos.filter(endereco => endereco.apartamento === true) //retornou uma nova lista com uma entrada de um determinado objeto
 console.log(listaApenasApartamentos);
